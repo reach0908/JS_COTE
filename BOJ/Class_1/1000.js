@@ -1,4 +1,4 @@
-const inputUtil = require('../nodeInputFile');
+const inputUtil = require('../../nodeInputFile');
 
 const [a, b] = inputUtil.oneLineValue();
 
