@@ -1,8 +1,9 @@
 // 유클리드 호제법을 이용한 최소공배수, 최대공약수를 구하는 문제
 
 function getGcdAndLcm(num1, num2) {
-	const 최대공약수 = (a, b) => (a % b === 0 ? b : gcd(b, a % b));
-	const 최소공배수 = (a, b) => (a * b) / gcd(a, b);
+	const 최대공약수 = (a, b) =>
+		a % b === 0 ? b : 최대공약수(b, a % b);
+	const 최소공배수 = (a, b) => (a * b) / 최대공약수(a, b);
 	return [최대공약수(num1, num2), 최소공배수(num1, num2)];
 }
 
