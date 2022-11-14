@@ -6,3 +6,6 @@ function solution(array) {
 			: parseInt(array.length / 2);
 	return array[center];
 }
+
+// js의 배열 sort
+// 기본 정렬은 문자열의 유니코드 코드 포인트
