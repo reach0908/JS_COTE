@@ -6,6 +6,25 @@ function solution(balls, share) {
 	if (balls === share) {
 		return 1;
 	}
+	console.log(
+		Math.round(
+			factorial(balls) /
+				(factorial(
+					balls -
+						share
+				) *
+					factorial(
+						share
+					))
+		)
+	);
+	console.log(
+		factorial(balls) /
+			(factorial(balls - share) *
+				factorial(
+					share
+				))
+	);
 	return Math.round(
 		factorial(balls) /
 			(factorial(balls - share) *
@@ -15,4 +34,4 @@ function solution(balls, share) {
 	);
 }
 
-solution(30, 4);
+solution(54, 10);
